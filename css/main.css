@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Crystal';
+    src: url('../fonts/crystalnormal.eot');
+    src: url('../fonts/crystalnormal.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/crystalnormal.woff') format('woff'),
+         url('../fonts/crystalnormal.ttf') format('truetype'),
+         url('../fonts/crystalnormal.svg#crystalnormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FreestyleC';
+    src: url('../fonts/freestyle.eot');
+    src: url('../fonts/freestyle.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/freestyle.woff') format('woff'),
+         url('../fonts/freestyle.ttf') format('truetype'),
+         url('../fonts/freestyle.svg#freestyle') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*  {
+	margin:0px;
+	padding:0px;
+}
+div#background {
+	position:fixed;
+	z-index:0;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	background-image:url(../img/textures/desk.jpg);
+	background-size:100% 100%;
+}
+div#coffeeStain {
+	position:fixed;
+	z-index:1;
+	width:400px;
+	height:400px;
+	top:300px;
+	right:-50px;
+	background-image:url(../img/misc/coffee.png);
+}
+div#notepad {
+	position:fixed;
+	z-index:2;
+	top:-10px;
+	left:10px;
+	font-family:FreestyleC;
+	border-radius:0px 0px 10px 10px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-khtml-border-radius:0px 0px 10px 10px;
+	box-shadow:2px 2px 5px rgba(00,00,00,0.5);
+	-webkit-box-shadow:2px 2px 5px rgba(00,00,00,0.5);
+	-moz-box-shadow:2px 2px 5px rgba(00,00,00,0.5);
+	-moz-transform:rotate(-5deg);
+	-webkit-transform:rotate(-5deg);
+	-o-transform:rotate(-5deg);
+	filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.98, M12=0.17, M21=-0.17, M22=0.98,SizingMethod="auto expand", enabled=true);
+}
+div#notepad div#rings {
+	background-image:url(../img/textures/rings.png);
+	height:34px;
+}
+div#notepad div#sheet {
+	min-height:700px;
+	background-image:url(../img/textures/sheet.png);
+	background-position:0px -60px;
+	padding:30px 20px;
+	line-height:65px;
+	border-radius:0px 0px 10px 10px;
+	-moz-border-radius:0px 0px 10px 10px;
+	-khtml-border-radius:0px 0px 10px 10px;
+}
+div#notepad div#sheet div.title {
+	font-size:80px;
+	text-decoration:underline;
+	text-align:center;
+	margin-bottom:15px;
+}
+div#notepad div#sheet div.bottom {
+	position:absolute;
+	bottom:0px;
+	right:15px;
+}
+div#notepad div#sheet a  {
+	font-size:60px;
+	text-decoration:none;
+}
+div#notepad > div#sheet > ul {
+	list-style-image:url(../img/icons/arrow.gif);
+}
+div#card {
+	position:fixed;
+	z-index:3;
+	min-width:370px;
+	top:10px;
+	right:-10px;		
+	padding:20px;
+	font-family:Verdana;
+	font-family:Crystal;
+	background-image:url(../img/textures/card.jpg);
+	border-radius:20px 20px 20px 20px;
+	-moz-border-radius:20px 20px 20px 20px;
+	-khtml-border-radius:20px 20px 20px 20px;
+	box-shadow: 1px 1px 5px #000000;
+	-webkit-box-shadow:1px 1px 5px #000000;
+	-moz-box-shadow:1px 1px 5px #000000;
+	-moz-transform:rotate(10deg);
+	-webkit-transform:rotate(10deg);
+	-o-transform:rotate(10deg);
+	filter:progid:DXImageTransform.Microsoft.Matrix(M11=0.98, M12=-0.17, M21=0.17, M22=0.98,SizingMethod="auto expand", enabled=true);
+}
+div#card hr {
+	width:100%;
+	border-color:#A79370;
+}
+div#card ul {
+	list-style-image:url(../img/icons/arrow.png);
+}
+div#card div#border {
+	padding:20px;
+	border-radius:20px 20px 20px 20px;
+	-moz-border-radius:20px 20px 20px 20px;
+	-khtml-border-radius:20px 20px 20px 20px;
+	border:3px double #94805d;
+}
+div#card div#name {
+	display:table-cell;
+	font-size:30px;
+	font-weight:600;
+}
+div#card div#specs {
+	margin:15px 0px;
+	font-size:20px;
+	font-weight:100;
+}
+div#card div#contacts {
+	display:table-cell;
+	float:right;
+	font-size:20px;
+	font-weight:100;
+	line-height:24px;
+}
+div#card div#contacts div.icon  {
+	position:relative;
+	margin-top:5px;
+	padding-left:37px;
+	background-repeat:no-repeat;
+}
+div#card div#contacts div.mail  {
+	background-image:url(../img/icons/mail.png);
+}
+div#card div#contacts div.phone  {
+	background-image:url(../img/icons/phone.png);
+}
+div.clear {
+	clear:both;
+}
+a:link,a:visited,a:hover {
+	color:#000000;
+	text-decoration:none;
+}
+ul {
+	list-style-type:circle;
+	list-style-position:inside;
+}
